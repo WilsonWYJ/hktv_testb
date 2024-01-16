@@ -1,0 +1,29 @@
+API Endpoint:
+POST /shipping/fee
+
+Request Body:
+{
+  "parcels": [
+    {
+      "length": 30.0,
+      "width": 20.0,
+      "height": 10.0,
+      "weight": 3.5,
+      "temperatureCondition": "ambient",
+      "quantity": 2
+    },
+    {
+      "length": 40.0,
+      "width": 30.0,
+      "height": 20.0,
+      "weight": 7.5,
+      "temperatureCondition": "chill",
+      "quantity": 1
+    }
+  ]
+}
+
+Response Body:
+{
+  "totalFee": 85.0
+}
